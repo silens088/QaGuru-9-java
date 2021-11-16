@@ -14,7 +14,6 @@ public class Main {
         tVbox.setChannel(8);
         tVbox.turnOff();
         tVbox.powerSupplyOff();
-
         tVbox.setBrand("Samsung");
         tVbox.getBrand();
 

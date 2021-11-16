@@ -79,7 +79,6 @@ public class TVbox {
         else {
             System.out.println("Ничего не происходит");
         }
-
     }
 
     public void turnOff() {
