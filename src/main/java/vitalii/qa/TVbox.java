@@ -7,8 +7,36 @@ public class TVbox {
     int prise;
     int channel;
     String material;
-    String brand;
+
     Boolean power;
+
+    Screen screen;
+
+    public static String brand = "Samsung";
+    public static String typeTv = "Цветной телевизор"; //это общие данные для всей программы, если изменить, то для всех обьектов.
+    public static String typeAppliances = "Электроприбор";
+    public static final String VOLTAGE = "220 вольт";
+
+    static class Screen { //статик класс говорит нам что этот класс неотьемлемая часть общего класса
+        int inch;
+        String matrix;
+
+        public void getInch() {
+            System.out.println(inch);
+        }
+
+        public void setInch(int inch) {
+            this.inch = inch;
+        }
+
+        public String getMatrix() {
+            return matrix;
+        }
+
+        public void setMatrix(String matrix) {
+            this.matrix = matrix;
+        }
+    }
 
     public TVbox(int length, int width, int height, String material, String brand, int prise, boolean power) {
         this.length = length;
@@ -18,6 +46,18 @@ public class TVbox {
         this.brand = brand;
         this.prise = prise;
         this.power = power;
+    }
+
+    public static void getTypeAppliances() {
+        System.out.println(typeAppliances);
+    }
+
+    public static void setTypeAppliances(String typeAppliances) {
+        TVbox.typeAppliances = typeAppliances;
+    }
+
+    public static void giveMeYourType() {
+        System.out.println(typeTv);
     }
 
 
@@ -84,8 +124,8 @@ public class TVbox {
         this.material = material;
     }
 
-    public String getBrand() {
-        return brand;
+    public void getBrand() {
+        System.out.println(brand);
     }
 
     public void setBrand(String brand) {
