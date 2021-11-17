@@ -1,4 +1,4 @@
-# qaGuru-9-java
+# QaGuru-9-java
 
 lesson java1
 
