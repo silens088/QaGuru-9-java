@@ -1,5 +1,5 @@
 # QaGuru-9-java
 
-lesson java1
+lesson 3. Основы Java. Дмитрий Тучс
 
-lesson java2
+lesson Дополнительное занятие «Основы Java - продолжение». Дмитрий Тучс.
