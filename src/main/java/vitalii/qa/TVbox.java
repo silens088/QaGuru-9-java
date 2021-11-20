@@ -1,16 +1,14 @@
 package vitalii.qa;
 
 public class TVbox {
-    int length;
-    int width;
-    int height;
-    int prise;
-    int channel;
-    String material;
-
-    Boolean power;
-
-    Screen screen;
+    private int length;
+    private int width;
+    private int height;
+    private int prise;
+    private int channel;
+    private String material;
+    private Boolean power;
+    private Screen screen;
 
     public static String brand = "Samsung";
     public static String typeTv = "Цветной телевизор"; //это общие данные для всей программы, если изменить, то для всех обьектов.
@@ -43,9 +41,9 @@ public class TVbox {
         this.width = width;
         this.height = height;
         this.material = material;
-        this.brand = brand;
         this.prise = prise;
         this.power = power;
+        TVbox.brand = brand;
     }
 
     public static void getTypeAppliances() {
@@ -72,11 +70,10 @@ public class TVbox {
     }
 
     public void turnOn() {
-        if (power == true) {
+        if (power == true) {  //так понятнее
             this.channel = 1;
             System.out.println("Телевизор Включился. " + "Канал: " + channel);
-        }
-        else {
+        } else {
             System.out.println("Ничего не происходит");
         }
     }
