@@ -70,7 +70,7 @@ public class TVbox {
     }
 
     public void turnOn() {
-        if (power == true) {
+        if (power == true) {  //так понятнее
             this.channel = 1;
             System.out.println("Телевизор Включился. " + "Канал: " + channel);
         } else {
